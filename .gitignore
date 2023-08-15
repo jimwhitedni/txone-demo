@@ -1,0 +1,14 @@
+.idea/
+dist/
+node_modules/
+src/**/*.jsx
+tests/__coverage__/
+tests/**/*.jsx
+coverage/
+
+.DS_Store
+
+/.scannerwork
+
+.npmrc
+yarn-error.log
