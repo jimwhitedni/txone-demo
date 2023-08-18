@@ -1,6 +1,14 @@
 import React from 'react'
-import HelloWorld from './components/HelloWorld'
+import { Box, TonicProvider } from '@tonic-ui/react'
+// import HelloWorld from 'src/components/HelloWorld'
+import Demo from 'src/pages/Demo'
 
-const App = () => <HelloWorld />
+const App = () => {
+  return (
+    <TonicProvider>
+      <Demo />
+    </TonicProvider>
+  )
+}
 
 export default App
