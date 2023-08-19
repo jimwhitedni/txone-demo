@@ -1,0 +1,34 @@
+:global {
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    background-color: #F8F9FE;
+    color: #45536C;
+    text-decoration-skip-ink: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    > div {
+      color: #45536C;
+    }
+  }
+
+  #root {
+    height: 100%;
+    display: flex;
+  }
+
+  a {
+    color: #0052CC;
+    transition-duration: 0s, 0.15s;
+
+    &:hover {
+      color: #0065FF;
+    }
+  }
+}
