@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className={styled.wrapper}>
       <div className={styled.square}>
-        <MenuButton toggleIcon={<Icon icon='face-smile-o' size='8x' color='yellow:50' />}>
+        <MenuButton toggleIcon={<Icon data-testid='face-smile-o' icon='face-smile-o' size='8x' color='yellow:50' />}>
           <MenuItem>
             <Icon icon='settings' mr='2x' />
             <Text>Settings</Text>
