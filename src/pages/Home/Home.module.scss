@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  // height: 100vh;
+
+  .square {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 245px;
+    border: 1px solid #606060;
+    overflow: hidden;
+  }
+}
