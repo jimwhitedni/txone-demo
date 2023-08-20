@@ -84,9 +84,11 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.19",
+    "@tanstack/react-table": "^8.9.3",
     "@tonic-ui/react": "^1.23.0",
     "@tonic-ui/styled-system": "^1.8.1",
     "axios": "^1.4.0",
+    "classnames": "^2.3.2",
     "i18next": "^23.2.9",
     "moment": "^2.29.4",
     "react": "^18.2.0",
