@@ -1,12 +1,17 @@
-import React from 'react'
-import { Box, TonicProvider } from '@tonic-ui/react'
-import Home from 'src/pages/Home'
+import React, { Suspense } from 'react'
+import { HashRouter } from 'react-router-dom'
+import { TonicProvider } from '@tonic-ui/react'
+import Router from 'src/components/Router'
 
 const App = () => {
   return (
-    <TonicProvider>
-      <Home />
-    </TonicProvider>
+    <HashRouter>
+      <TonicProvider>
+        <Suspense>
+          <Router />
+        </Suspense>
+      </TonicProvider>
+    </HashRouter>
   )
 }
 
