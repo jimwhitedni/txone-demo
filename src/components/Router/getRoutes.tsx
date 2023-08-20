@@ -15,6 +15,14 @@ const getRoutes = (): RouteObject[] => {
           index: true,
           element: <Demo />,
         },
+        {
+          path: '/a',
+          element: <Demo />,
+        },
+        {
+          path: '/b',
+          element: <Demo />,
+        },
       ],
     },
   ]

@@ -16,6 +16,16 @@ export default React.memo(function Menu() {
               {t('menu.homepage')}
             </NavLink>
           </li>
+          <li>
+            <NavLink end to='a' className={({ isActive }) => cx({ [styled['is-active']]: isActive })}>
+              {t('menu.page1')}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink end to='b' className={({ isActive }) => cx({ [styled['is-active']]: isActive })}>
+              {t('menu.page2')}
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </aside>

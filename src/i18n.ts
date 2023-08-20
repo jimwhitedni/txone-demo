@@ -17,11 +17,15 @@ initI18n()
 i18next.addResourceBundle('en', 'global', {
   menu: {
     homepage: 'Home',
+    page1: 'Page 1',
+    page2: 'Page 2',
   },
 })
 
 i18next.addResourceBundle('zh', 'global', {
   menu: {
-    homepage: '首页',
+    homepage: '首頁',
+    page1: '頁1',
+    page2: '頁2',
   },
 })
