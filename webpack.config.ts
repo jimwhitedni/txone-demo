@@ -22,31 +22,17 @@ const webpackConfig : Configuration = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'static/js/[name].[contenthash].js',
-    chunkFilename: 'static/js/[name].[chunkhash].chunk.js',
+    filename: 'static/js/[name].[contenthash:8].js',
+    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
   },
   module: {
     rules: [
       {
         test: [/\.(jsx?|js)$/, /\.(tsx?|ts)$/],
         include: source,
-        // loader: 'babel-loader',
         use: ['happypack/loader?id=babel'],
         exclude: /node_modules/,
       },
-      // {
-      //   test: /.([cm]?ts|tsx)$/,
-      //   include: source,
-      //   // exclude: /node_modules/,
-      //   use: [
-      //     {
-      //       loader: 'ts-loader',
-      //       options: {
-      //         transpileOnly: true
-      //       }
-      //     }
-      //   ]
-      // },
       {
         test: /\.(s[ac]ss|css)$/i,
         include: source,

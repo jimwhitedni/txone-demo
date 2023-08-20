@@ -1,5 +1,6 @@
+// @ts-nocheck
 import { merge } from 'webpack-merge'
-import commonConfig from './../webpack.config.ts'
+import commonConfig from '../webpack.config.ts'
 import TerserPlugin from 'terser-webpack-plugin'
 
 const prod = merge(commonConfig, {
