@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import cx from 'classnames'
 
 export default React.memo(function Menu() {
-  const { t } = useTranslation()
+  const { t } = useTranslation('global')
 
   return (
     <aside className={styled.wrapper}>
