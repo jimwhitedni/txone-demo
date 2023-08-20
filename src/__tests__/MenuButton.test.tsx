@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { TonicProvider, Text, MenuItem, Icon } from '@tonic-ui/react'
+import { TonicProvider, Text, Icon } from '@tonic-ui/react'
 import MenuButton from 'src/components/MenuButton'
 
 function renderTonicProvider(comp: React.JSX.Element) {
@@ -20,14 +20,14 @@ describe('menu button test', () => {
   test('menu item', async () => {
     renderTonicProvider(
       <MenuButton>
-        <MenuItem>
+        <MenuButton.Item>
           <Icon icon='settings' mr='2x' />
           <Text>Settings</Text>
-        </MenuItem>
-        <MenuItem>
+        </MenuButton.Item>
+        <MenuButton.Item>
           <Icon icon='user-team' mr='2x' />
           <Text>Accounts</Text>
-        </MenuItem>
+        </MenuButton.Item>
       </MenuButton>
     )
     await userEvent.click(screen.getByRole('button'))
@@ -39,10 +39,10 @@ describe('menu button test', () => {
   test('menu toggle icon', async () => {
     renderTonicProvider(
       <MenuButton toggleIcon={<Icon data-testid='face-smile-o' icon='face-smile-o' size='8x' color='yellow:50' />}>
-        <MenuItem>
+        <MenuButton.Item>
           <Icon icon='user-team' mr='2x' />
           <Text>Accounts</Text>
-        </MenuItem>
+        </MenuButton.Item>
       </MenuButton>
     )
     await userEvent.click(screen.getByRole('button'))
