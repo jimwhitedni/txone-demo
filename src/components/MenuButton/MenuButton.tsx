@@ -17,6 +17,7 @@ const MenuButton = (props: MenuButtonProps) => {
         width='max-content'
         className={styled.menu}
         PopperProps={{
+          usePortal: true,
           modifiers: [
             {
               name: 'flip',

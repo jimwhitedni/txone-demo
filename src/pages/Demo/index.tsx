@@ -58,7 +58,10 @@ const Demo = () => {
           </MenuButton.Item>
         </MenuButton>
       </div>
-      <MenuButton style={{ position: 'absolute', right: 0, bottom: 0 }}>
+      <MenuButton
+        toggleIcon={<Icon data-testid='face-smile-o' icon='face-smile-o' size='8x' color='yellow:50' />}
+        style={{ position: 'absolute', right: '3px', bottom: '10px' }}
+      >
         <MenuButton.Item>
           <Icon icon='settings' mr='2x' />
           <Text>Settings</Text>
