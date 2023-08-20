@@ -8,7 +8,7 @@ const Demo = () => {
   return (
     <div className={styled.wrapper}>
       <div className={styled.square}>
-        <MenuButton toggleIcon={<Icon data-testid='face-smile-o' icon='face-smile-o' size='8x' color='yellow:50' />}>
+        <MenuButton toggleIcon={<Icon data-testid='face-smile-1' icon='face-smile-o' size='8x' color='yellow:50' />}>
           <MenuButton.Item>
             <Icon icon='settings' mr='2x' />
             <Text>Settings</Text>
@@ -59,7 +59,7 @@ const Demo = () => {
         </MenuButton>
       </div>
       <MenuButton
-        toggleIcon={<Icon data-testid='face-smile-o' icon='face-smile-o' size='8x' color='yellow:50' />}
+        toggleIcon={<Icon data-testid='face-smile-2' icon='face-smile-o' size='8x' color='yellow:50' />}
         style={{ position: 'absolute', right: '3px', bottom: '10px' }}
       >
         <MenuButton.Item>
