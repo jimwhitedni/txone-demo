@@ -36,12 +36,12 @@ const TableDemo = () => {
       {
         header: 'Event Type',
         accessorKey: 'eventType',
-        size: 100,
+        size: 110,
       },
       {
         header: 'Affected Devices',
         accessorKey: 'affectedDevices',
-        size: 150,
+        size: 110,
         style: {
           textAlign: 'right',
         },
@@ -49,7 +49,7 @@ const TableDemo = () => {
       {
         header: 'Detections',
         accessorKey: 'detections',
-        size: 150,
+        size: 110,
         style: {
           textAlign: 'right',
         },
@@ -78,7 +78,7 @@ const TableDemo = () => {
   const layout = 'flexbox' // One of: 'flexbox', 'table'
 
   return (
-    <Table layout={layout}>
+    <Table layout={layout} sx={{ overflowX: 'scroll' }}>
       <TableHeader>
         {table.getHeaderGroups().map((headerGroup) => (
           <TableHeaderRow key={headerGroup.id}>
@@ -138,20 +138,6 @@ const TableDemo = () => {
                 </TableCell>
               )
             })}
-            <MenuButton>
-              <MenuButton.Item>
-                <Icon icon='settings' mr='2x' />
-                <Text>Settings</Text>
-              </MenuButton.Item>
-              <MenuButton.Item>
-                <Icon icon='user-team' mr='2x' />
-                <Text>Accounts</Text>
-              </MenuButton.Item>
-              <MenuButton.Item>
-                <Icon icon='lock' mr='2x' />
-                <Text>Privacy control</Text>
-              </MenuButton.Item>
-            </MenuButton>
           </TableRow>
         ))}
       </TableBody>
