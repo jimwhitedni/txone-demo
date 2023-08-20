@@ -22,5 +22,5 @@
   },
   "exclude": ["node_modules"],
   "typeRoots": ["./node_modules/@types/**/*.d.ts", "./src/types/*.ts"],
-  "include": ["src", "jest.config.ts", "src/types/declaration.d.ts", "jest-setup.ts"],
+  "include": ["src", "jest.config.ts", "src/types/declaration.d.ts", "jest-setup.ts", "tests", "playwright.config.ts"],
 }

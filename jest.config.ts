@@ -18,13 +18,12 @@ const config: JestConfigWithTsJest = {
     ],
   },
   moduleNameMapper: {
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/src/__tests__/fileMock.js',
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/src/__tests__/fileMock.js',
     '\\.(css|scss)$': 'identity-obj-proxy',
   },
   collectCoverageFrom: ['**/*.{ts,tsx}', '!**/node_modules/**', '!**/vendor/**'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'scss', 'node'],
-  setupFilesAfterEnv: ['<rootDir>/jest-setup.ts']
+  setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
 }
 
 export default config
