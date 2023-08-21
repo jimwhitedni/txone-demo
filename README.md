@@ -16,6 +16,7 @@ modal.
 ## Component: MenuButton
 - Using Compound Component to reduce Complexity.
 - Open the necessary props only. Even the style is restricted to modify.
+- Set `usePortal` to **true** and enable the `flip` in the modifiers to prevent the content be cut off.
 
 ## Test report
 ![Alt text](image-3.png)
